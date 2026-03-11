@@ -90,8 +90,8 @@ export default function UserDetailModal({ id, onClose }) {
       return "Profile image must be under 50KB";
     }
     
-    if ((type === 'poster' || type === 'anniversary') && file.size > 2.5 * 1024 * 1024) { // 2.5MB
-      return "Poster must be under 2.5MB";
+    if ((type === 'poster' || type === 'anniversary') && file.size > 5 * 1024 * 1024) { // 5MB
+      return "Poster must be under 5MB";
     }
     
     return null;
